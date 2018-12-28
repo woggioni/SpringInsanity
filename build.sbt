@@ -5,6 +5,8 @@ organization := "net.woggioni"
 version := "1.0"
 resolvers += Resolver.mavenLocal
 
+javacOptions += "-g"
+
 logLevel := Level.Info
 git.useGitDescribe := true
 fork := true
@@ -18,7 +20,7 @@ libraryDependencies += "javax" % "javaee-api" % "7.0"
 libraryDependencies += "org.springframework" % "spring-context" % springVersion.value
 libraryDependencies += "org.springframework" % "spring-test" % springVersion.value
 
-libraryDependencies += "junit" % "junit" % "4.12" % "test" % Test
+libraryDependencies += "junit" % "junit" % "4.12" % Test
 libraryDependencies += "com.novocode" % "junit-interface" % "0.11" % Test
 
 
